@@ -23,7 +23,10 @@ app.use("/api/contacts", contactRoutes);
 //admin routes;
 app.use('/api/admin', adminRoutes);
 
-app.listen(PORT, '0.0.0.0', () => {
-  console.log(`Server running at http://192.168.1.142:${PORT}`);
-});
+// app.listen(PORT, '0.0.0.0', () => {
+//   console.log(`Server running at http://192.168.1.142:${PORT}`);
+// });
 
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
